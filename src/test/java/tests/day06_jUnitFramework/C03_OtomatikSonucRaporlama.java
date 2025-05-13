@@ -1,13 +1,12 @@
 package tests.day06_jUnitFramework;
 
-import net.bytebuddy.implementation.bytecode.Throw;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class C02_ifElseIleTest {
+public class C03_OtomatikSonucRaporlama {
 
     @Test
     public void testotomasyonuTesti(){
@@ -25,7 +24,10 @@ public class C02_ifElseIleTest {
 
         if (actualUrl.contains(expectedUrlIcerik)){
             System.out.println("Testotomasyonu testi PASSED");
-        } else System.out.println("Testotomasyonu testi FAILED");
+        } else {
+            System.out.println("Testotomasyonu testi FAILED");
+            throw new AssertionError("url testotomasyonu icermiyor");
+        }
 
         driver.quit();
 
@@ -48,7 +50,11 @@ public class C02_ifElseIleTest {
 
         if (actualTitle.contains(expectedTitleIcerik)){
             System.out.println("Wise Quarter testi PASSED");
-        } else System.out.println("Wise Quarter testi FAILED");
+        } else {
+            System.out.println("Wise Quarter testi FAILED");
+            throw new AssertionError("Title Wise Quarter icermiyor");
+
+        }
 
         driver.quit();
     }
@@ -68,10 +74,13 @@ public class C02_ifElseIleTest {
 
         if (actualTitle.equals(expectedTitle)){
             System.out.println("YouTube testi PASSED");
-        } else System.out.println("YouTube testi FAILED");
+        } else {
+            System.out.println("YouTube testi FAILED");
+            throw new AssertionError("Title Youtube degil");
+
+        }
 
         driver.quit();
+
     }
-
 }
-
