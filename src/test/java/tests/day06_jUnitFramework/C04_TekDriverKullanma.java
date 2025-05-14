@@ -1,4 +1,4 @@
-package tests.day06_jUnitFramework;
+package tests.day07_assertions.day06_jUnitFramework;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;

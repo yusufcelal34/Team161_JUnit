@@ -1,6 +1,5 @@
-package tests.day06_jUnitFramework;
+package tests.day07_assertions.day06_jUnitFramework;
 
-import net.bytebuddy.implementation.bytecode.Throw;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
