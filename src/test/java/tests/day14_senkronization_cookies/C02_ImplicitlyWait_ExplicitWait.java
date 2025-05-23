@@ -101,7 +101,9 @@ public class C02_ImplicitlyWait_ExplicitWait {
 
         // WebElement itsGoneElementi = driver.findElement(By.xpath("//*[.=\"It's gone!\"]"));
 
-        WebElement itsGoneElementi = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[.=\"It's gone!\"]")));
+        WebElement itsGoneElementi = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//*[.=\"It's gone!\"]")));
+
         Assertions.assertTrue(itsGoneElementi.isDisplayed());
 
         //4. Add buttonuna basin
@@ -115,11 +117,9 @@ public class C02_ImplicitlyWait_ExplicitWait {
         WebElement itsBackElementi = wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.xpath("//*[text()=\"It's back!\"]")));
 
-
         Assertions.assertTrue(itsBackElementi.isDisplayed());
 
         driver.quit();
-
 
     }
 }
