@@ -1,4 +1,4 @@
-package tests.day17_excelAutomation_getScreenshoot;
+package tests.day17_excelAutomation_getScreenshot;
 
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
