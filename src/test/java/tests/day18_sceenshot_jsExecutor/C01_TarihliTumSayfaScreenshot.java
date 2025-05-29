@@ -1,4 +1,4 @@
-package tests.day18_screeshot_JsExecuter;
+package tests.day18_sceenshot_jsExecutor;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
